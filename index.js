@@ -60,6 +60,6 @@ app.post('/posts', checkAuth, postCreateValidation, handleValidationErrors, post
 app.delete('/posts/:id', checkAuth, postController.remove);
 app.patch('/posts/:id', checkAuth, postCreateValidation, handleValidationErrors, postController.update);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('Server has been started on 3000 port!');
 });
