@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "npx sequelize db:migrate && nodemon node index.js --ext js,jsx",
+    "start": "nodemon node index.js --ext js,jsx",
     "start:dev": "nodemon index.js"
   },
   "author": "",
